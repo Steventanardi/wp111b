@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		#header {
+			background-color: #00008B;
+			color: #fff;
+		}
+
+		#navBtns {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		#navBtns button {
+			margin: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			background-color: blue;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#homePage, #signupPage, #loginPage, #logoutPage {
+			display: none;
+			padding: 20px;
+		}
+
+		#homePage {
+			background-color: #fff;
+		}
+
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Header</h1>
+	</div>
+
+	<div id="navBtns">
+		<button id="homeBtn">Home</button>
+		<button id="signupBtn">Sign Up</button>
+		<button id="loginBtn">Log In</button>
+		<button id="logoutBtn">Log Out</button>
+	</div>
+
+	<div id="homePage">
+		<h1>Home Page</h1>
+	</div>
+	<div id="signupPage" class="hidden">
+		<h1>Sign Up</h1>
+	</div>
+	<div id="loginPage" class="hidden">
+		<h1>Log In</h1>
+	</div>
+	<div id="logoutPage" class="hidden">
+		<h1>Log Out</h1>
+	</div>
+
+	<script>
+		const homeBtn = document.getElementById("homeBtn");
+		const signupBtn = document.getElementById("signupBtn");
+		const loginBtn = document.getElementById("loginBtn");
+		const logoutBtn = document.getElementById("logoutBtn");
+
+		const homePage = document.getElementById("homePage");
+		const signupPage = document.getElementById("signupPage");
+		const loginPage = document.getElementById("loginPage");
+		const logoutPage = document.getElementById("logoutPage");
+
+		homeBtn.addEventListener("click", () => {
+			homePage.style.display = "block";
+			signupPage.style.display = "none";
+			loginPage.style.display = "none";
+			logoutPage.style.display = "none";
+		});
+		signupBtn.addEventListener("click", () => {
+			homePage.style.display = "none";
+			signupPage.style.display = "block";
+			loginPage.style.display = "none";
+			logoutPage.style.display = "none";
+		});
+		loginBtn.addEventListener("click", () => {
+			homePage.style.display = "none";
+			signupPage.style.display = "none";
+			loginPage.style.display = "block";
+			logoutPage.style.display = "none";
+		});
+		logoutBtn.addEventListener("click", () => {
+			homePage.style.display = "none";
+			signupPage.style.display = "none";
+			loginPage.style.display = "none";
+			logoutPage.style.display = "block";
+		});
+	</script>
+</body>
+</html>
