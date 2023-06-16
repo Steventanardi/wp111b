@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(to right, #ff6b6b, #c738d8);
+    padding: 20px;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  #banner {
+    background-image: url("https://nationaltoday.com/wp-content/uploads/2022/06/INDONESIA-INDEPENDENCE-DAY-1200x834.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #explore {
+    background-color: #ffc107;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #explore a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  li img {
+    max-width: 100%;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #5f27cd, #341f97);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
